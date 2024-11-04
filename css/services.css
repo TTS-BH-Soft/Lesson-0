@@ -1,0 +1,19 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services__box--item {
+  padding: 1rem;
+  border-radius: 50px;
+
+  box-shadow: 0 25px 50px 25px #f6f7ff;
+}

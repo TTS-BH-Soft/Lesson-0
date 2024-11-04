@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1a1a3d;
+}
+
+.active {
+  color: #414880;
+}
+
+/* Contact button */
+.contact-button {
+  background-color: #ff64ae;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
