@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: space-between;
   flex-direction: column;
+  margin-bottom: -50px;
 }
 
 .team__header {

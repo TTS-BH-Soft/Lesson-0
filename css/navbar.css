@@ -22,6 +22,7 @@ nav a:hover {
   color: #1a1a3d;
 }
 
-nav button {
+nav .btn {
   margin-left: 2rem;
+  max-width: 158px;
 }

@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  background: url("../assets/background/bg-about.svg") no-repeat;
+  background-position: bottom right;
+  background-size: contain;
 }
 
 .services__header {
