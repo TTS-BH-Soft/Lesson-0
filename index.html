@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Beauty Clinic</title>
 
+        <link rel="shortcut icon" href="https://images.locanto.com.vn/5478592160/BHSoft-Your-Top-Software-Development-Company_1.jpg" type="image/x-icon">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <!-- Styling -->
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="./css//services.css">
@@ -12,18 +19,13 @@
         <link rel="stylesheet" href="./css/team.css">
         <link rel="stylesheet" href="./css/contact-us.css">
         <link rel="stylesheet" href="./css/footer.css">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
     </head>
 
     <body>
         <!-- Navbar -->
-        <div class="navbar">
+        <div id="navbar">
             <div class="logo">
-                <img src="logo.png" alt="Logo">
-                <span class="logo-text">Beautice</span>
+                <img src="./assets/logo/logo-main.svg" alt="Logo">
             </div>
 
             <nav>
@@ -34,32 +36,32 @@
                 <a href="#">Blog</a>
             </nav>
 
-            <button class="btn">Contact</button>
+            <button type="button" class="btn">Contact</button>
         </div>
 
         <!-- Slider -->
 
         <!-- Main Services -->
-        <section class="services">
+        <section id="services">
             <h5>Main Services</h5>
             <h2>Learn services to focus on your beauty</h2>
             <p>Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
 
             <div class="services__box">
-                <div class="services__box--item">
-                    <img src="./images//service-1.png" alt="Service 1">
+                <div class="services__item">
+                    <img class="services__icon" src="./assets/service-1.svg" alt="Service 1">
                     <h5>Beauty consultation</h5>
                     <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
                 </div>
 
-                <div class="services__box--item">
-                    <img src="./images//service-2.png" alt="Service 2">
+                <div class="services__item">
+                    <img class="services__icon" src="./assets/service-2.svg" alt="Service 2">
                     <h5>Skill treatments</h5>
                     <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
                 </div>
 
-                <div class="services__box--item">
-                    <img src="./images//service-3.png" alt="Service 3">
+                <div class="services__item">
+                    <img class="services__icon" src="./assets/service-3.svg" alt="Service 3">
                     <h5>Beauty product</h5>
                     <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
                 </div>
@@ -67,59 +69,63 @@
         </section>
 
         <!-- About Us -->
-        <section class="about-us">
+        <section id="about-us">
             <div class="about-us__info">
                 <h5>About Us</h5>
                 <h2>We are the best beauty clinic</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</p>
                 <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
 
-                <button class="btn">Learn More</button>
+                <div class="about-us__btn">
+
+                    <button type="button" class="btn">Learn More</button>
+                    <button>Watch Video</button>
+                </div>
             </div>
 
             <div class="about-us__pic">
-                <img src="./images/about-us.png" alt="About Us Image">
+                <img src="./assets/about-us.svg" alt="About Us Image">
             </div>
         </section>
 
         <!-- Professional Teams -->
-        <section class="team">
+        <section id="team">
             <h5>Professional Teams</h5>
             <h2>The Professional expert</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
 
             <div class="team__box">
-                <div class="team__box--item">
-                    <img src="./images/team-1.png" alt="Team 1">
+                <div class="team__item">
+                    <img src="./assets/team-1.svg" alt="Team 1">
                     <h5>Surgeon</h5>
                     <h4>Briyan Nevalli</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
 
-                    <div class="team-social">
+                    <div class="team__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
-                <div class="team__box--item center">
-                    <img src="./images/team-2.png" alt="Team 2">
+                <div class="team__item team__item--center">
+                    <img src="./assets/team-2.svg" alt="Team 2">
                     <h5>Dermatologist</h5>
                     <h4>Bella sebastian</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
-                    <div class="team-social">
+                    <div class="team__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
-                <div class="team__box--item">
-                    <img src="./images/team-3.png" alt="Team 3">
+                <div class="team__item">
+                    <img src="./assets/team-3.svg" alt="Team 3">
                     <h5>Stylist expert</h5>
                     <h4>Lilly Adams</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
-                    <div class="team-social">
+                    <div class="team__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -128,13 +134,36 @@
             </div>
         </section>
 
+        <!-- Contact Us -->
+        <section id="contact-us">
+            <div>
+                <img src="./assets/contact-us.svg" alt="Contact Us">
+            </div>
+
+            <div class="contact-us__form">
+                <h5>Contact Us</h5>
+                <h2>Send your inquiry to our expert team</h2>
+                <p>Lorem ipsum dolor sit amet nulla turapis tellus.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+                    <input type="email" placeholder="Email address" required>
+                    <input type="text" placeholder="Subject message" required>
+                    <textarea placeholder="Your inquiry here" rows="4" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
         <!-- Footer -->
-        <footer class="footer">
+        <footer id="footer">
             <div class="footer-content">
                 <!-- Logo and description section -->
                 <div class="footer-logo">
                     <div class="logo">
-                        <img src="./images/Footer Logo.png" alt>
+                        <img src="./assets/logo/logo-footer.svg" alt>
                     </div>
                     <p>Beautice is a Beauty Clinic WordPress Theme.</p>
                     <address>Baker Street 101, NY, United States.<br>+521 569 8966. <a href="mailto:mail@company.com">mail@company.com</a></address>

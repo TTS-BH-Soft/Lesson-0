@@ -1,7 +1,10 @@
-.footer {
-  background: url("../images/bg-footer.png") no-repeat;
+#footer {
+  background: url("../assets/background/bg-footer.svg") no-repeat;
   color: #ffffff;
   padding: 50px 20px;
+
+  width: 100%;
+  height: 705px;
 }
 
 .footer-content {

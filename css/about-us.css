@@ -1,5 +1,11 @@
-.about-us {
+#about-us {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.about-us__pic img {
+  width: 100%;
+  max-width: 476px;
+  max-height: 350px;
 }

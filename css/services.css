@@ -1,4 +1,4 @@
-.services {
+#services {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,14 +6,31 @@
 }
 
 .services__box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.services__box--item {
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 343px;
+  height: 458px;
   padding: 1rem;
   border-radius: 50px;
-
   box-shadow: 0 25px 50px 25px #f6f7ff;
+}
+
+.services__icon {
+  width: 166px;
+  height: 166px;
+}
+
+@media (max-width: 900px) {
+  .services__box {
+    grid-template-columns: 1fr;
+  }
 }
