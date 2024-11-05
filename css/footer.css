@@ -1,90 +1,102 @@
 #footer {
-  background: url("../assets/background/bg-footer.svg") no-repeat;
-  color: #ffffff;
-  padding: 50px 20px;
+  background: url("../assets/background/bg-footer.svg"),
+    url("../assets/background/bg-bottom-footer.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom left;
+  background-size: cover, contain;
 
+  color: #d7dbff;
+  padding: 50px 20px;
   width: 100%;
   height: 705px;
+  position: relative;
 }
 
-.footer-content {
+.footer__content {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+
+  position: relative;
+  top: 50px;
 }
 
-.footer-logo {
+.footer__logo {
   flex: 1;
   max-width: 300px;
 }
 
-.footer-logo .logo::before,
-.footer-logo .logo::after {
+.footer__logo-image::before,
+.footer__logo-image::after {
   content: "";
   position: absolute;
   background-color: white;
   border-radius: 50%;
 }
 
-.footer-logo .logo::before {
+.footer__logo-image::before {
   width: 10px;
   height: 10px;
   top: 10px;
   left: 12px;
 }
 
-.footer-logo .logo::after {
+.footer__logo-image::after {
   width: 5px;
   height: 5px;
   top: 18px;
   left: 18px;
 }
 
-.footer-logo h2 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.footer-logo p,
-.footer-logo address {
+.footer__description,
+.footer__address {
   color: #b8b8d2;
   margin-top: 10px;
   font-size: 0.9rem;
 }
 
-.footer-links {
+.footer__address a {
+  color: #b8b8d2;
+}
+
+.footer__links {
   display: flex;
   flex: 1;
   justify-content: space-between;
 }
 
-.link-section h3 {
+.footer__link-section {
+  flex: 1;
+}
+
+.footer__link-title {
   font-size: 1.1rem;
   margin-bottom: 15px;
+  color: white;
 }
 
-.link-section ul {
+.footer__link-list {
   list-style: none;
+  padding: 0;
 }
 
-.link-section ul li {
+.footer__link-item {
   margin-bottom: 10px;
 }
 
-.link-section ul li a {
+.footer__link {
   color: #b8b8d2;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s;
 }
 
-.link-section ul li a:hover {
+.footer__link:hover {
   color: #ffffff;
 }
 
-/* Social media button and Copyright */
-.footer-bottom {
+.footer__bottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -93,11 +105,7 @@
   color: #b8b8d2;
 }
 
-/* Chỉnh lại sau */
-.footer-bottom-item {
-}
-
-.social {
+.footer__social {
   flex: 1;
   max-width: 200px;
   display: flex;
@@ -105,12 +113,40 @@
   align-items: center;
 }
 
-.social a {
+.footer__social-link {
   color: #ffffff;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
 
-.social a:hover {
+.footer__social-link:hover {
   color: #f06292;
+}
+
+.footer__copyright p {
+  color: #b8b8d2;
+}
+
+.footer__back-to-top {
+  width: 36px;
+  height: 36px;
+
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: #f06292;
+  color: #ffffff;
+
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.footer__back-to-top:hover {
+  background-color: #d85076;
 }

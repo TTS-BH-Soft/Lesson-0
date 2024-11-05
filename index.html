@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Beauty Clinic</title>
 
-        <link rel="shortcut icon" href="https://images.locanto.com.vn/5478592160/BHSoft-Your-Top-Software-Development-Company_1.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1750426453131579392/nvDnezTd_400x400.jpg" type="image/x-icon">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous"
@@ -14,6 +14,7 @@
         <!-- Styling -->
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/slider.css">
         <link rel="stylesheet" href="./css//services.css">
         <link rel="stylesheet" href="./css/about-us.css">
         <link rel="stylesheet" href="./css/team.css">
@@ -24,22 +25,29 @@
     <body>
         <!-- Navbar -->
         <div id="navbar">
-            <div class="logo">
-                <img src="./assets/logo/logo-main.svg" alt="Logo">
-            </div>
+            <img src="./assets/logo/logo-main.svg" alt="Logo" width="258px" height="63px">
 
             <nav>
-                <a href="#" class="active">Home+</a>
+                <a href="#" class="active">Home +</a>
                 <a href="#">About</a>
                 <a href="#">Service</a>
                 <a href="#">Gallery</a>
                 <a href="#">Blog</a>
+                <button type="button" class="btn">Contact</button>
             </nav>
 
-            <button type="button" class="btn">Contact</button>
         </div>
 
         <!-- Slider -->
+        <section id="slider">
+            <div class="slider__container">
+                <img class="slider__image" src="./assets/slider.svg" alt="Image 1">
+                <img class="slider__image" src="./assets/slider.svg" alt="Image 2">
+                <img class="slider__image" src="./assets/slider.svg" alt="Image 3">
+            </div>
+            <button id="prev" class="slider__button slider__button--prev">Previous</button>
+            <button id="next" class="slider__button slider__button--next">Next</button>
+        </section>
 
         <!-- Main Services -->
         <section id="services">
@@ -77,7 +85,6 @@
                 <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
 
                 <div class="about-us__btn">
-
                     <button type="button" class="btn">Learn More</button>
                     <button>Watch Video</button>
                 </div>
@@ -135,81 +142,92 @@
         </section>
 
         <!-- Contact Us -->
-        <section id="contact-us">
-            <div>
-                <img src="./assets/contact-us.svg" alt="Contact Us">
-            </div>
+        <section class="contact-us">
+            <div class="contact-us__wrapper">
 
-            <div class="contact-us__form">
-                <h5>Contact Us</h5>
-                <h2>Send your inquiry to our expert team</h2>
-                <p>Lorem ipsum dolor sit amet nulla turapis tellus.</p>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Last name" required>
-                    </div>
-                    <input type="email" placeholder="Email address" required>
-                    <input type="text" placeholder="Subject message" required>
-                    <textarea placeholder="Your inquiry here" rows="4" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <div class="contact-us__image">
+                    <img src="./assets/contact-us.svg" alt="Contact Us">
+                </div>
+
+                <div class="contact-us__content">
+                    <h5 class="contact-us__title">Contact Us</h5>
+                    <h2 class="contact-us__heading">Send your inquiry to our expert team</h2>
+                    <p class="contact-us__description">Lorem ipsum dolor sit amet nulla turapis tellus.</p>
+                    <form action="#" method="post" class="contact-us__form">
+                        <div class="contact-us__form-group">
+                            <input type="text" class="contact-us__input" placeholder="First name" required>
+                            <input type="text" class="contact-us__input" placeholder="Last name" required>
+                        </div>
+                        <input type="email" class="contact-us__input" placeholder="Email address" required>
+                        <input type="text" class="contact-us__input" placeholder="Subject message" required>
+                        <textarea class="contact-us__textarea" placeholder="Your inquiry here" rows="4" required></textarea>
+                        <button type="submit" class="contact-us__button btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer id="footer">
-            <div class="footer-content">
+            <div class="footer__content">
                 <!-- Logo and description section -->
-                <div class="footer-logo">
-                    <div class="logo">
-                        <img src="./assets/logo/logo-footer.svg" alt>
+                <div class="footer__logo">
+                    <div class="footer__logo-image">
+                        <img src="./assets/logo/logo-footer.svg" alt="Beautice Logo">
                     </div>
-                    <p>Beautice is a Beauty Clinic WordPress Theme.</p>
-                    <address>Baker Street 101, NY, United States.<br>+521 569 8966. <a href="mailto:mail@company.com">mail@company.com</a></address>
+                    <p class="footer__description">Beautice is a Beauty Clinic WordPress Theme.</p>
+                    <address class="footer__address">
+                        Baker Street 101, NY, United States.<br>
+                        +521 569 8966. <a href="mailto:mail@company.com">mail@company.com</a>
+                    </address>
                 </div>
 
                 <!-- Links sections -->
-                <div class="footer-links">
-                    <div class="link-section">
-                        <h3>Pages</h3>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Team</a></li>
+                <div class="footer__links">
+                    <div class="footer__link-section">
+                        <h3 class="footer__link-title">Pages</h3>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item"><a href="#" class="footer__link">Home</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">About</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Services</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Gallery</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Team</a></li>
                         </ul>
                     </div>
 
-                    <div class="link-section">
-                        <h3>Informations</h3>
-                        <ul>
-                            <li><a href="#">Terms & conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                    <div class="footer__link-section">
+                        <h3 class="footer__link-title">Informations</h3>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item"><a href="#" class="footer__link">Terms & conditions</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Privacy policy</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Blog</a></li>
+                            <li class="footer__link-item"><a href="#" class="footer__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Social media button and Copyright -->
-            <div class="footer-bottom">
-
-                <div class="footer-bottom-item social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Social media and Copyright -->
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
                 </div>
 
-                <div class="footer-bottom-item">
-                    <p>© AltDesain Studio 2021 - All right reserved.</p>
+                <div class="footer__copyright">
+                    <p>© AltDesain Studio 2021 - All rights reserved.</p>
                 </div>
             </div>
+
+            <!-- Back to top button -->
+            <button class="footer__back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i class="fa fa-arrow-up"></i>
+            </button>
         </footer>
-        <script src="index.js"></script>
+
+        <script src="./js/index.js"></script>
     </body>
 </html>
