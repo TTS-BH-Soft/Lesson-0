@@ -21,10 +21,21 @@ p {
   color: #8b8b8b;
   font-size: 1rem;
   font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 45px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 h5 {
   color: #ff64ae;
+  font-size: 16px;
 }
 
 .btn {

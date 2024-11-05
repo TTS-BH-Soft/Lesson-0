@@ -5,23 +5,43 @@
   flex-direction: column;
 }
 
+.services__header {
+  max-width: 848px;
+  text-align: center;
+}
+
+.services__header h2 {
+  max-width: 732px;
+  max-height: 97px;
+}
+
 .services__box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
+
+  margin-top: 100px;
 }
 
 .services__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
+  text-align: center;
+
   width: 100%;
   max-width: 343px;
   height: 458px;
-  padding: 1rem;
-  border-radius: 50px;
+  padding: 1.5rem;
+  border-radius: 42px;
   box-shadow: 0 25px 50px 25px #f6f7ff;
+}
+
+.services__item--content p {
+  margin: 0 1rem;
+  font-size: 14px;
 }
 
 .services__icon {
