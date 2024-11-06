@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  max-width: 1440px;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +26,12 @@ p {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.1em;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
 }
 
 h2 {
@@ -58,4 +68,10 @@ h5 {
 
 .btn:hover {
   background-color: #d91c6b;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

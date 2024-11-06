@@ -12,9 +12,8 @@
             referrerpolicy="no-referrer" />
 
         <!-- Styling -->
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/navbar.css">
-        <link rel="stylesheet" href="./css/slider.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/container.css">
         <link rel="stylesheet" href="./css//services.css">
         <link rel="stylesheet" href="./css/about-us.css">
         <link rel="stylesheet" href="./css/team.css">
@@ -23,34 +22,46 @@
     </head>
 
     <body>
-        <!-- Navbar -->
-        <div id="navbar">
-            <img src="./assets/logo/logo-main.svg" alt="Logo" width="258px" height="63px">
+        <!-- Container -->
+        <div id="main-container">
+            <!-- Navbar -->
+            <div id="navbar">
+                <img src="./assets/logo/logo-main.svg" alt="Logo" class="navbar__logo">
+                <nav class="navbar__nav">
+                    <a href="#" class="navbar__link active">Home +</a>
+                    <a href="#" class="navbar__link">About</a>
+                    <a href="#" class="navbar__link">Service</a>
+                    <a href="#" class="navbar__link">Gallery</a>
+                    <a href="#" class="navbar__link">Blog</a>
+                </nav>
+                <button type="button" class="navbar__button btn">Contact</button>
+            </div>
 
-            <nav>
-                <a href="#" class="active">Home +</a>
-                <a href="#">About</a>
-                <a href="#">Service</a>
-                <a href="#">Gallery</a>
-                <a href="#">Blog</a>
-                <button type="button" class="btn">Contact</button>
-            </nav>
+            <!-- Slider -->
+            <div id="slider">
+                <div class="slider__content">
+                    <div class="slider__text">
+                        <h1>Clinic & beauty consultant</h1>
+                        <p>It is a long established fact that a reader will be by the readable content of a page.</p>
+                        <button class="btn">More Details</button>
+                    </div>
 
+                    <div class="slider__image">
+                        <img src="./assets/slider.svg" alt="Beauty consultation">
+                    </div>
+                </div>
+
+                <!-- Slider controls for pagination -->
+                <div class="slider__controls">
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
         </div>
 
-        <!-- Slider -->
-        <section id="slider">
-            <div class="slider__container">
-                <img class="slider__image" src="./assets/slider.svg" alt="Image 1">
-                <img class="slider__image" src="./assets/slider.svg" alt="Image 2">
-                <img class="slider__image" src="./assets/slider.svg" alt="Image 3">
-            </div>
-            <button id="prev" class="slider__button slider__button--prev">Previous</button>
-            <button id="next" class="slider__button slider__button--next">Next</button>
-        </section>
-
         <!-- Main Services -->
-        <section id="services">
+        <section id="services" class="flex-center">
             <div class="services__header">
                 <h5>Main Services</h5>
                 <h2>Learn services to focus on your beauty</h2>
@@ -59,7 +70,7 @@
 
             <div class="services__box">
                 <div class="services__item">
-                    <img class="services__icon" src="./assets/service-1.svg" alt="Service 1">
+                    <img class="services__icon" src="./assets/services/service-1.svg" alt="Service 1">
                     <div class="services__item--content">
                         <h4>Beauty consultation</h4>
                         <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
@@ -67,7 +78,7 @@
                 </div>
 
                 <div class="services__item">
-                    <img class="services__icon" src="./assets/service-2.svg" alt="Service 2">
+                    <img class="services__icon" src="./assets/services/service-2.svg" alt="Service 2">
                     <div class="services__item--content">
                         <h4>Skill treatments</h4>
                         <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
@@ -75,7 +86,7 @@
                 </div>
 
                 <div class="services__item">
-                    <img class="services__icon" src="./assets/service-3.svg" alt="Service 3">
+                    <img class="services__icon" src="./assets/services/service-3.svg" alt="Service 3">
                     <div class="services__item--content">
                         <h4>Beauty product</h4>
                         <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
@@ -85,7 +96,7 @@
         </section>
 
         <!-- About Us -->
-        <section id="about-us">
+        <section id="about-us" class="flex-center">
             <div class="about-us__info">
                 <h5>About Us</h5>
                 <h2>We are the best beauty clinic</h2>
@@ -97,7 +108,7 @@
 
                 <div class="about-us__btn">
                     <button type="button" class="btn">Learn More</button>
-                    <a href="#">
+                    <a href="#" class="flex-center">
                         <i class="fa-solid fa-circle-play"></i>
                         <span>Watch Video</span>
                     </a>
@@ -120,7 +131,7 @@
             <div class="team__box">
                 <div class="team__item">
                     <div class="team__image">
-                        <img src="./assets/team-1.svg" alt="Team 1">
+                        <img src="./assets/team/team-1.svg" alt="Team 1">
                     </div>
 
                     <div class="team__content">
@@ -138,7 +149,7 @@
 
                 <div class="team__item team__item--center">
                     <div class="team__image">
-                        <img src="./assets/team-2.svg" alt="Team 2">
+                        <img src="./assets/team/team-2.svg" alt="Team 2">
                     </div>
 
                     <div class="team__content">
@@ -156,7 +167,7 @@
 
                 <div class="team__item">
                     <div class="team__image">
-                        <img src="./assets/team-3.svg" alt="Team 3">
+                        <img src="./assets/team/team-3.svg" alt="Team 3">
                     </div>
 
                     <div class="team__content">
@@ -175,7 +186,7 @@
         </section>
 
         <!-- Contact Us -->
-        <section id="contact-us">
+        <section id="contact-us" class="flex-center">
             <div class="contact-us__wrapper">
 
                 <div class="contact-us__image">

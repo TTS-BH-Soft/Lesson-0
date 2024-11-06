@@ -1,8 +1,4 @@
 #about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   margin: 100px 0;
 }
 
@@ -26,9 +22,6 @@
 }
 
 .about-us__btn a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
   margin: 0 3rem;
 }
@@ -42,9 +35,3 @@
   margin: 0 1rem;
   color: #8b8b8b;
 }
-
-/* .about-us__pic img {
-  width: 100%;
-  max-width: 476px;
-  max-height: 350px;
-} */

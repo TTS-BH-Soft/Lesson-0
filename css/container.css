@@ -1,0 +1,137 @@
+/* Main container with background */
+#main-container {
+  background: url("../assets/background/bg-header.svg") no-repeat;
+  background-size: 84%;
+
+  height: 805px;
+
+  padding: 41px 0;
+}
+
+/* Navbar container */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding-top: 41px; */
+  height: 63px;
+  z-index: 10;
+}
+
+.navbar__logo {
+  width: auto;
+}
+
+/* Navigation links */
+.navbar__nav {
+  display: flex;
+  gap: 30px; /* Adds consistent space between links */
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #1a1a3d;
+}
+
+.navbar__link.active {
+  font-weight: 600;
+  color: #1a1a3d;
+}
+
+/* Contact button */
+.navbar__button {
+  font-size: 1rem;
+  line-height: 24px;
+
+  width: 158px;
+  height: 52px;
+  line-height: 24px;
+  letter-spacing: 10%;
+}
+
+.navbar__button:hover {
+  background-color: #e07eb3;
+}
+
+/* Slider section */
+#slider {
+  position: relative;
+
+  top: 213px;
+  left: 189px;
+
+  height: 542px;
+  width: 1098px;
+}
+
+/* Slider content styling */
+.slider__content {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.slider__text {
+  flex: 1;
+}
+
+.slider__text h1 {
+  width: 430px;
+  height: 128px;
+}
+
+.slider__text p {
+  color: #091156;
+  width: 474px;
+  height: 54px;
+
+  margin: 0;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.slider__text .btn {
+  width: 200px;
+  margin-top: 28px;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+}
+
+.slider__image {
+  width: 602px;
+  height: 398px;
+
+  position: relative;
+  top: -56px;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 71px;
+}
+
+.dot {
+  width: 15px;
+  height: 3px;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #414880;
+  width: 25px;
+  height: 8px;
+  border-radius: 50px;
+}

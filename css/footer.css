@@ -96,9 +96,10 @@
   color: #ffffff;
 }
 
+/* Footer Bottom */
 .footer__bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 30px;
   font-size: 1rem;
@@ -107,9 +108,9 @@
 
 .footer__social {
   flex: 1;
-  max-width: 200px;
+  max-width: 305px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -123,9 +124,7 @@
   color: #f06292;
 }
 
-.footer__copyright p {
-  color: #b8b8d2;
-}
+/* Back to top button */
 
 .footer__back-to-top {
   width: 36px;
@@ -139,7 +138,6 @@
   color: #ffffff;
 
   border: none;
-  padding: 10px;
   border-radius: 5px;
 
   cursor: pointer;

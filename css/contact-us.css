@@ -1,7 +1,4 @@
 #contact-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2rem;
   background: url("../assets/background/bg-contact.svg") no-repeat;
   background-size: contain;

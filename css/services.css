@@ -1,12 +1,10 @@
 #services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   background: url("../assets/background/bg-about.svg") no-repeat;
   background-position: bottom right;
   background-size: contain;
+  padding-top: 100px;
 }
 
 .services__header {
@@ -15,8 +13,8 @@
 }
 
 .services__header h2 {
-  max-width: 732px;
-  max-height: 97px;
+  width: 732px;
+  height: 97px;
 }
 
 .services__box {
