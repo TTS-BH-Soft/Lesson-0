@@ -12,19 +12,14 @@
   position: relative;
 }
 
-.footer__content {
+.footer__container {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-
-  position: relative;
-  top: 50px;
+  justify-content: space-around;
 }
 
 .footer__logo {
   flex: 1;
-  max-width: 300px;
+  max-width: 492px;
 }
 
 .footer__logo-image::before,
@@ -60,14 +55,15 @@
   color: #b8b8d2;
 }
 
+/* Footer Links */
 .footer__links {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer__link-section {
-  flex: 1;
+  max-width: 215px;
 }
 
 .footer__link-title {

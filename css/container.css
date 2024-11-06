@@ -1,7 +1,7 @@
 /* Main container with background */
 #main-container {
   background: url("../assets/background/bg-header.svg") no-repeat;
-  background-size: 84%;
+  background-size: 88%;
 
   height: 805px;
 
@@ -12,20 +12,23 @@
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  /* padding-top: 41px; */
+  justify-content: space-around;
+
   height: 63px;
-  z-index: 10;
 }
 
 .navbar__logo {
-  width: auto;
+  width: 258px;
+  height: auto;
 }
 
 /* Navigation links */
 .navbar__nav {
   display: flex;
-  gap: 30px; /* Adds consistent space between links */
+  justify-content: space-between;
+
+  width: 481px;
+  height: 25px;
 }
 
 .navbar__link {
@@ -38,12 +41,12 @@
 }
 
 .navbar__link:hover {
-  color: #1a1a3d;
+  color: #414880;
 }
 
 .navbar__link.active {
-  font-weight: 600;
-  color: #1a1a3d;
+  font-weight: 500;
+  color: #414880;
 }
 
 /* Contact button */
@@ -52,7 +55,7 @@
   line-height: 24px;
 
   width: 158px;
-  height: 52px;
+  height: 53px;
   line-height: 24px;
   letter-spacing: 10%;
 }
