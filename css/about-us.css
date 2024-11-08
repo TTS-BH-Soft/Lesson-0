@@ -14,7 +14,7 @@
 .about-us__btn {
   margin-top: 3rem;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .about-us__btn button {
@@ -34,4 +34,10 @@
 .about-us__btn span {
   margin: 0 1rem;
   color: #8b8b8b;
+}
+
+.about-us__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
