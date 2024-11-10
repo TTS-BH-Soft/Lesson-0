@@ -11,9 +11,10 @@
 }
 
 .team__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Team Item */
@@ -27,7 +28,7 @@
 
   max-width: 270px;
   height: 439px;
-  margin: auto;
+  margin: auto 30px;
 }
 
 .team__image img {

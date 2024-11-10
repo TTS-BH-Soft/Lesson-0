@@ -11,33 +11,42 @@
 /* Navbar container */
 #navbar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-
-  height: 63px;
 }
-
+/* 
 .navbar__logo {
-  width: 258px;
-  height: auto;
-}
+  margin-left: 25px;
+} */
 
 /* Navigation links */
 .navbar__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 10px;
+}
 
-  width: 481px;
-  height: 25px;
+.navbar__box {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
 }
 
 .navbar__link {
-  text-decoration: none;
   color: #8b8b8b;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: 1rem; /* Slightly larger font */
   transition: color 0.3s;
+
+  text-decoration: none;
+  line-height: 2px;
+  letter-spacing: 1.7px;
+}
+
+.navbar__link.active {
+  font-weight: 600;
+  color: #414880;
 }
 
 .navbar__link:hover {
@@ -49,19 +58,19 @@
   color: #414880;
 }
 
-/* Contact button */
+.navbar__button:hover {
+  background-color: #e07eb3;
+}
+
+/* Contact button positioning */
 .navbar__button {
+  padding: 1rem 1rem;
   font-size: 1rem;
-  line-height: 24px;
+  margin-right: 1.2rem;
 
   width: 158px;
   height: 53px;
-  line-height: 24px;
-  letter-spacing: 10%;
-}
-
-.navbar__button:hover {
-  background-color: #e07eb3;
+  letter-spacing: 1.7px;
 }
 
 /* Slider section */
@@ -119,7 +128,12 @@
 .slider__controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
 
   width: 71px;
 }
