@@ -1,18 +1,18 @@
 #about-us {
-  margin: 70px 0;
+  margin: 70px;
 }
 
 .about-us__info {
-  max-width: 664px;
-  padding-left: 3.7rem;
+  width: 664px;
 }
 
 .about-us__info h5 {
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.7rem;
 }
 
 .about-us__info h2 {
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
 }
 
 .about-us__content {
@@ -21,23 +21,30 @@
 }
 
 .about-us__content p {
-  line-height: 1.6;
-  margin-bottom: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+
+  letter-spacing: 1.7px;
 }
 
 .about-us__btn {
-  margin-top: 3rem;
+  margin-top: 3.2rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .about-us__btn button {
   max-width: 200px;
+  height: 59px;
+
+  letter-spacing: 1.5px;
 }
 
 .about-us__btn a {
   text-decoration: none;
   margin: 0 3rem;
+
+  justify-content: flex-start;
 }
 
 .about-us__btn i {
@@ -46,8 +53,10 @@
 }
 
 .about-us__btn span {
-  margin: 0 1rem;
+  margin: 0 0.6rem;
   color: #8b8b8b;
+
+  letter-spacing: 1.8px;
 }
 
 .about-us__pic {
@@ -55,10 +64,6 @@
   justify-content: center;
   align-items: center;
 
-  padding-top: 2.5rem;
-  padding-left: 3rem;
-}
-
-.about-us__pic img {
-  padding-left: 3rem;
+  padding-top: 2.4rem;
+  max-width: 476px;
 }
