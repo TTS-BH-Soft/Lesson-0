@@ -1,9 +1,16 @@
 #about-us {
-  margin: 100px 0;
+  margin: 68px 0;
+
+  background: url("../assets/background/bg-about.svg") no-repeat;
+  background-position: right;
 }
 
 .about-us__info {
   max-width: 664px;
+}
+
+.about-us__info h5 {
+  margin-left: 8px;
 }
 
 .about-us__content {

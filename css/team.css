@@ -53,9 +53,7 @@
   max-width: 270px;
 }
 
-.team__content h5,
-h4,
-p {
+.team__content {
   margin: 13px 0;
 }
 

@@ -6,6 +6,8 @@
   height: 805px;
 
   padding: 41px 0;
+
+  margin-bottom: 30px;
 }
 
 /* Navbar container */
@@ -51,6 +53,8 @@
 .navbar__icon {
   width: 7px;
   height: 7px;
+
+  margin: 0 4px;
 }
 
 .link__root {
@@ -59,25 +63,24 @@
 }
 
 .link__children {
-  padding-left: 45px;
+  padding-left: 44px;
+  max-width: 114px;
 }
 
 .navbar__link.active {
   font-weight: 600;
   color: #414880;
-}
+  width: 66px;
 
-.navbar__link:hover {
-  color: #414880;
-}
-
-.navbar__link .active {
-  font-weight: 500;
-  color: #414880;
+  margin-top: 2px;
 
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.navbar__link:hover {
+  color: #414880;
 }
 
 .navbar__button:hover {
@@ -132,9 +135,9 @@
 
 .slider__button {
   width: 200px;
-  margin-top: 28px;
-  line-height: 24px;
-  letter-spacing: 1.7px;
+  margin-top: 27px;
+  line-height: 23px;
+  letter-spacing: 1.65px;
 }
 
 .slider__image {
@@ -148,11 +151,11 @@
 .slider__controls {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 89.3%;
+  left: 553px;
   transform: translate(-80%, -50%);
 
   width: 71px;
