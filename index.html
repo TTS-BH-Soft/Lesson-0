@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="./css/team.css">
         <link rel="stylesheet" href="./css/contact-us.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/main-content.css">
     </head>
 
     <body>
@@ -62,74 +63,77 @@
                 </div>
 
                 <!-- Slider controls for pagination -->
-                <div class="slider__controls">
-                    <div class="dot"></div>
+                <div class="slider__controls" id="dots-container">
+                    <div class="dot" id="next"></div>
                     <div class="dot active"></div>
-                    <div class="dot"></div>
+                    <div class="dot" id="prev"></div>
                 </div>
             </div>
         </div>
 
         <main>
-            <!-- Main Services -->
-            <section id="services" class="flex-center">
-                <div class="services__header">
-                    <h5>Main Services</h5>
-                    <h2>Learn services to focus <br>on your beauty</h2>
-                    <p>Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-                </div>
+            <div class="main-content">
+                <!-- Main Services -->
+                <section id="services" class="flex-center">
+                    <div class="services__header">
+                        <h5>Main Services</h5>
+                        <h2>Learn services to focus <br>on your beauty</h2>
+                        <p>Porta rhoncus orci condimentum vitae lobortis eu dignissim non massa. Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+                    </div>
 
-                <div class="services__box">
-                    <div class="services__item">
-                        <img class="services__icon" src="./assets/services/service-1.svg" alt="Service 1">
-                        <div class="services__item--content">
-                            <h4>Beauty consultation</h4>
-                            <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+                    <div class="services__box">
+                        <div class="services__item">
+                            <img class="services__icon" src="./assets/services/service-1.svg" alt="Service 1">
+                            <div class="services__item--content">
+                                <h4>Beauty consultation</h4>
+                                <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+                            </div>
+                        </div>
+
+                        <div class="services__item">
+                            <img class="services__icon" src="./assets/services/service-2.svg" alt="Service 2">
+                            <div class="services__item--content">
+                                <h4>Skin treatments</h4>
+                                <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+                            </div>
+                        </div>
+
+                        <div class="services__item">
+                            <img class="services__icon" src="./assets/services/service-3.svg" alt="Service 3">
+                            <div class="services__item--content">
+                                <h4>Beauty product</h4>
+                                <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Us -->
+                <section id="about-us" class="flex-center">
+                    <div class="about-us__info">
+                        <h5>About Us</h5>
+                        <h2>We are the best beauty clinic</h2>
+
+                        <div class="about-us__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse
+                                placerat.</p>
+                            <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
+                        </div>
+
+                        <div class="about-us__btn">
+                            <button type="button" class="btn">Learn More</button>
+                            <a class="flex-center">
+                                <i class="fa-solid fa-circle-play"></i>
+                                <span>Watch Video</span>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="services__item">
-                        <img class="services__icon" src="./assets/services/service-2.svg" alt="Service 2">
-                        <div class="services__item--content">
-                            <h4>Skin treatments</h4>
-                            <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-                        </div>
+                    <div class="about-us__pic">
+                        <img src="./assets/about-us.svg" alt="About Us Image">
                     </div>
-
-                    <div class="services__item">
-                        <img class="services__icon" src="./assets/services/service-3.svg" alt="Service 3">
-                        <div class="services__item--content">
-                            <h4>Beauty product</h4>
-                            <p>Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About Us -->
-            <section id="about-us" class="flex-center">
-                <div class="about-us__info">
-                    <h5>About Us</h5>
-                    <h2>We are the best beauty clinic</h2>
-
-                    <div class="about-us__content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</p>
-                        <p>Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.</p>
-                    </div>
-
-                    <div class="about-us__btn">
-                        <button type="button" class="btn">Learn More</button>
-                        <a href="#" class="flex-center">
-                            <i class="fa-solid fa-circle-play"></i>
-                            <span>Watch Video</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="about-us__pic">
-                    <img src="./assets/about-us.svg" alt="About Us Image">
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Professional Teams -->
             <section id="team">
@@ -300,11 +304,11 @@
             <!-- Social media and Copyright -->
             <div class="footer__bottom">
                 <div class="footer__social">
-                    <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/" class="footer__social-link"><i class="fab fa-instagram"></i></a>
                 </div>
 
                 <div class="footer__copyright">
@@ -317,7 +321,5 @@
                 <i class="fa fa-arrow-up"></i>
             </button>
         </footer>
-
-        <script src="./js/index.js"></script>
     </body>
 </html>

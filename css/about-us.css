@@ -1,21 +1,28 @@
 #about-us {
-  margin: 68px 0;
-
-  background: url("../assets/background/bg-about.svg") no-repeat;
-  background-position: right;
+  margin: 70px 0;
 }
 
 .about-us__info {
   max-width: 664px;
+  padding-left: 3.7rem;
 }
 
 .about-us__info h5 {
-  margin-left: 8px;
+  margin-bottom: 0.9rem;
+}
+
+.about-us__info h2 {
+  margin-bottom: 0.9rem;
 }
 
 .about-us__content {
   max-width: 483px;
   line-height: 24px;
+}
+
+.about-us__content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
 .about-us__btn {
@@ -47,4 +54,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+}
+
+.about-us__pic img {
+  padding-left: 3rem;
 }
