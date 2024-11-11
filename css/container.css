@@ -14,12 +14,11 @@
   align-items: flex-start;
   justify-content: space-around;
 }
-/* 
-.navbar__logo {
-  margin-left: 25px;
-} */
 
-/* Navigation links */
+.navbar__logo {
+  margin-left: 0.7rem;
+}
+
 .navbar__nav {
   display: flex;
   justify-content: space-between;
@@ -28,20 +27,39 @@
   margin-right: 10px;
 }
 
+.navbox__link {
+  width: 481px;
+  padding-right: 34px;
+}
+
 .navbar__box {
   display: flex;
-  justify-content: space-between;
-  padding-right: 50px;
+  justify-content: flex-end;
 }
 
 .navbar__link {
   color: #8b8b8b;
-  font-size: 1rem; /* Slightly larger font */
+  font-size: 1rem;
   transition: color 0.3s;
-
   text-decoration: none;
-  line-height: 2px;
   letter-spacing: 1.7px;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar__icon {
+  width: 7px;
+  height: 7px;
+}
+
+.link__root {
+  margin-right: 1.1rem;
+  padding-left: 47px;
+}
+
+.link__children {
+  padding-left: 45px;
 }
 
 .navbar__link.active {
@@ -53,24 +71,27 @@
   color: #414880;
 }
 
-.navbar__link.active {
+.navbar__link .active {
   font-weight: 500;
   color: #414880;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .navbar__button:hover {
   background-color: #e07eb3;
 }
 
-/* Contact button positioning */
 .navbar__button {
   padding: 1rem 1rem;
   font-size: 1rem;
-  margin-right: 1.2rem;
 
   width: 158px;
-  height: 53px;
+  height: 52px;
   letter-spacing: 1.7px;
+  line-height: 2.5px;
 }
 
 /* Slider section */
@@ -84,7 +105,6 @@
   width: 1098px;
 }
 
-/* Slider content styling */
 .slider__content {
   display: flex;
   justify-content: center;
@@ -110,7 +130,7 @@
   line-height: 24px;
 }
 
-.slider__text .btn {
+.slider__button {
   width: 200px;
   margin-top: 28px;
   line-height: 24px;

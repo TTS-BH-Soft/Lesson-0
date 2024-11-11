@@ -26,18 +26,25 @@
         <div id="main-container">
             <!-- Navbar -->
             <div id="navbar">
-                <img src="./assets/logo/logo-main.svg" alt="Logo" class="navbar__logo">
+                <img src="./assets/logo/main-logo.png" alt="Logo" class="navbar__logo">
 
-                <nav class="navbar__nav">
-                    <div class="navbar__box">
-                        <a href="#" class="navbar__link active">Home</a>
-                        <a href="#" class="navbar__link">About</a>
-                        <a href="#" class="navbar__link">Service</a>
-                        <a href="#" class="navbar__link">Gallery</a>
-                        <a href="#" class="navbar__link">Blog</a>
+                <div class="navbar__nav">
+                    <div class="navbar__box navbox__link">
+                        <a href="#" class="navbar__link active">
+                            Home
+                            <img src="./assets/plus-icon.svg" alt class="navbar__icon">
+                        </a>
+
+                        <a href="#" class="navbar__link link__children">About</a>
+                        <a href="#" class="navbar__link link__children">Service</a>
+                        <a href="#" class="navbar__link link__children">Gallery</a>
+                        <a href="#" class="navbar__link link__root">Blog</a>
                     </div>
-                    <button type="button" class="navbar__button btn">Contact</button>
-                </nav>
+
+                    <div class="navbar__box">
+                        <button type="button" class="navbar__button btn">Contact</button>
+                    </div>
+                </div>
             </div>
 
             <!-- Slider -->
@@ -46,7 +53,7 @@
                     <div class="slider__text">
                         <h1>Clinic & beauty consultant</h1>
                         <p>It is a long established fact that a reader will be by the readable content of a page.</p>
-                        <button class="btn">More Details</button>
+                        <button class="btn slider__button">More Details</button>
                     </div>
 
                     <div class="slider__image">
