@@ -1,7 +1,11 @@
 #contact-us {
   padding: 2rem;
   background: url("../assets/background/bg-contact.svg") no-repeat;
-  background-size: contain;
+  background-size: 82%;
+
+  padding-top: 0.2rem;
+  margin-top: 1.9rem;
+  margin-bottom: 0.4rem;
 }
 
 .contact-us__wrapper {
@@ -13,30 +17,36 @@
 
 .contact-us__image {
   margin: 7.3rem;
-  margin-right: 6.4rem;
+  margin-right: 6.3rem;
 }
 
 .contact-us__image img {
   width: 520px;
   height: 614px;
 
-  margin-top: 2.9rem;
+  margin-top: 2.8rem;
 }
 
 .contact-us__content {
   max-width: 520px;
 }
 
+.contact-us__title {
+  margin-bottom: 0.1rem;
+}
+
 .contact-us__heading {
-  font-size: 2.25rem;
-  margin: 1rem 0;
+  font-size: 2.23rem;
+  margin: 0.7rem 0;
   line-height: 45px;
 
   max-width: 404px;
+  font-weight: 550;
 }
 
 .contact-us__description {
-  margin-bottom: 2rem;
+  margin: 1.2rem 0;
+  letter-spacing: 1.7px;
 }
 
 .contact-us__form {
@@ -50,29 +60,36 @@
 .contact-us__form-group {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2.2rem;
 }
 
 .contact-us__input,
 .contact-us__textarea {
-  flex: 1;
   width: 100%;
-  padding: 0.75rem;
   font-size: 1rem;
+  font-weight: 300;
+
   border: 1px solid #d9ddfe;
   border-radius: 15px;
+  padding-left: 1.4rem;
+  padding-bottom: 0.2rem;
   line-height: 24px;
 }
 
+.last-name {
+  padding-left: 1.7rem;
+}
+
 .contact-us__input {
-  height: 62px;
+  height: 61.58px;
   width: 520px;
-  padding-left: 1.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .contact-us__textarea {
   resize: none;
   height: 240px;
+  padding-top: 1.6rem;
 }
 
 .contact-us__input:focus,
@@ -83,8 +100,14 @@
 .contact-us__input::placeholder,
 .contact-us__textarea::placeholder {
   color: #c5c5c5;
+  line-height: 24px;
+  letter-spacing: 1.7px;
 }
 
 .contact-us__button {
-  margin: 2rem 0;
+  margin: 1.4rem 0;
+  line-height: 23px;
+  letter-spacing: 1.7px;
+
+  padding: 1.1rem 2rem;
 }
