@@ -7,12 +7,17 @@
 }
 
 .about-us__info h5 {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-us__info h2 {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
   font-weight: 600;
+}
+
+.about-us__info--box {
+  width: 664px;
+  height: 292px;
 }
 
 .about-us__content {
@@ -28,7 +33,7 @@
 }
 
 .about-us__btn {
-  margin-top: 3.2rem;
+  margin-top: 3.1rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -42,7 +47,7 @@
 
 .about-us__btn a {
   text-decoration: none;
-  margin: 0 3rem;
+  margin: 0 2.8rem;
 
   justify-content: flex-start;
 }
@@ -53,7 +58,7 @@
 }
 
 .about-us__btn span {
-  margin: 0 0.6rem;
+  margin: 0 0.8rem;
   color: #8b8b8b;
 
   letter-spacing: 1.8px;
