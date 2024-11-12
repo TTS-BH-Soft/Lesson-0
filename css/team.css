@@ -52,6 +52,10 @@
   height: 146px;
 }
 
+.team__item--side {
+  margin: 6.5rem 30px;
+}
+
 .team__item--center {
   justify-content: center;
 
@@ -70,8 +74,12 @@
   margin: 0.5rem 0;
 }
 
-.team__content {
-  margin: 13px 0;
+.team__content h5 {
+  margin-bottom: 1rem;
+}
+
+.team__content h4 {
+  margin-bottom: 1rem;
 }
 
 .team__content p {
