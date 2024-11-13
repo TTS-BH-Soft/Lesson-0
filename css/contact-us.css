@@ -17,7 +17,7 @@
 
 .contact-us__image {
   margin: 7.3rem;
-  margin-right: 6.3rem;
+  margin-right: 6.4rem;
 }
 
 .contact-us__image img {
@@ -36,17 +36,18 @@
 }
 
 .contact-us__heading {
-  font-size: 2.23rem;
+  font-size: 2.2rem;
   margin: 0.7rem 0;
   line-height: 45px;
 
   max-width: 404px;
   font-weight: 550;
+  letter-spacing: 0.4px;
 }
 
 .contact-us__description {
   margin: 1.2rem 0;
-  letter-spacing: 1.7px;
+  letter-spacing: 1.65px;
 }
 
 .contact-us__form {
